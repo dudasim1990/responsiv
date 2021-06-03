@@ -134,8 +134,6 @@
 }
 
 
-
-
 h1{
     font-family: 'Fraunces', serif;
     font-size: 72px;
@@ -270,7 +268,7 @@ body{
             position: absolute;
             top: 86px;
             background: -webkit-linear-gradient( rgba(254, 252, 247, 0), rgba(254, 252, 247, 1));
-            // -webkit-background-clip: text;
+            -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
             background-repeat: no-repeat;
         }
@@ -511,14 +509,10 @@ body{
 
 
 
-
-
 @media only screen and (max-width: 768px){
     
     .body{
         .main{
-            
-            
             
             .container{
                 width: 688px;
@@ -538,8 +532,6 @@ body{
                     width: 236px;
                     height: 26px;
                 }
-                
-                
                 
                 .ourcollection{
                     display: flex;
@@ -750,183 +742,193 @@ body{
     
     
     
-    @media only screen and (max-width: 378px){
-        
-        
-        // body{
-            //     background-color: rgb(141, 221, 231);
-            // }
+    
+}
 
-            
-            
-            
-            .main{
-                width: 100%;
-                .container{
-                    width: 327px;
-                    margin: 0 auto;               
-                    .greatcoffee{
-                        background-image: url('../cofe-mobile/Bitmap.png');
-                        width: 327px;
-                        height: 500px;
-                        margin-bottom: 136px;
-                        background-repeat: no-repeat;
-                        border-radius: 10px;
-                        .greatcoffee_title{
-                            color: $light-cream;
-                            width: 590px;
-                            padding-top: 117px;
-                            padding-left: 86px;
-                            margin-bottom: 32px;
-                        }
-                        .greatcoffee_text{
-                            font-size: 16px;
-                            font-weight: 400;
-                            color: $light-cream;
-                            width: 450px;
-                            padding-left: 86px;
-                            margin-bottom: 56px;
-                            line-height: 26px;
-                            opacity: .8;
-                            font-family: $barlow;
-                        }
-                        .greatcoffee_link{
-                            margin-left: 86px;
-                            @extend %main-button-default;
-                            &:hover{
-                                background-color: #66D2CF;
-                                background-color: $button-hover;
-                                transition: .5s ease all;
-                            }
-                            &:disabled {
-                                background-color: $button-disabled;
-                            }
-                            &:active {
-                                background-color: $button-disabled;
-                                color: $dark-grey-blue;
-                            }
-                        }
-                        
-                    }
-                    
-                    
-                    .choose{
-                        .choose_content{
-                            width: 327px;
-                            height: 902px;
-                            padding: 0 24px;
-                            .choose_title{
-                                font-size: 28px;
-                            }
-                            .choose_text{
-                                width: 279px;
-                                margin: 0;
-                            }
-                        }
-                        
-                        .choose_box-wrapper{
-                            display: inline-block;
-                            width: 279px;
-                            margin: 0;
-                            position: absolute;
-                            top: 305px;
-                            .choose_box{
-                                width: 279px;
-                                height: 382px;
-                                margin: 0;
-                                // text-align: center;
-                                padding: 200px 12px 48px 12px;
-                                padding: 0;
-                                .choose_box_title{
-                                    margin: 0;
-                                    // text-align: center;
-                                }
-                                .choose_box_text{
-                                    // width: 212px;
-                                    // height: 78px;
-                                    // text-align: center;
-                                    margin: 0;
-                                    margin-right: 0;
-                                }
-                            }
-                            .best-quality{
-                                position: relative;
-                                &::before{
-                                    content: '';
-                                    background-image: url('../img/best-quality.svg');
-                                    width: 72px;
-                                    height: 72px;
-                                    position: absolute;
-                                    left: 104px;
-                                    top: 72px;
-                                }
-                            }
-                            .exclusive-benefits{
-                                position: relative;
-                                &::before{
-                                    content: '';
-                                    background-image: url('../img/benefits.svg');
-                                    width: 72px;
-                                    height: 72px;
-                                    position: absolute;
-                                    left: 104px;
-                                    top: 72px;
-                                }
-                            }
-                            .free-shipping{
-                                position: relative;
-                                margin-bottom: 144px;
-                                &::before{
-                                    content: '';
-                                    background-image: url('../img/free-shipping.svg');
-                                    width: 72px;
-                                    height: 50px;
-                                    position: absolute;
-                                    left: 104px;
-                                    top: 83px;
-                                }  
-                            }
-                        }
-                    }
-                    
-                    
-                    .works{
-                        .works-oval{
-                            display: none;
-                        }
-                        
-                        .works_box-wrapper{
-                            display: flex;
-                            flex-direction: column;
-                            text-align: center;
-                        }
-                    }
-                    
-                }
+@media only screen and (max-width: 378px){
+    
+    
+    // body{
+        //     background-color: rgb(141, 221, 231);
+        // }
+        
+        .header{
+            .container{
+                width: 327px;
+                margin: 0 auto;
+                
             }
-            
-            .footer{
-                width: 100%;
-                .container{
-                    width: 327px;
-                    .footer-wrapper{
-                        .footer_link_img{
-                            width: 218px;
-                            height: 24px;
-                            padding-right: 0;
-                        }
-                        .footer_list{
-                            display: flex;
-                            flex-direction: column;
-                            .footer_item{
-                                .footer_link{
-                                    margin: 0;
-                                }
-                            }
-                        }
-                    }
-                }
-            }
-            
         }
         
+        
+        
+        .main{
+            width: 100%;
+            .container{
+                width: 327px;
+                margin: 0 auto;               
+                .greatcoffee{
+                    background-image: url('../cofe-mobile/Bitmap.png');
+                    width: 327px;
+                    height: 500px;
+                    margin-bottom: 136px;
+                    background-repeat: no-repeat;
+                    border-radius: 10px;
+                    .greatcoffee_title{
+                        font-size: 40px;
+                        color: $light-cream;
+                        width: 590px;
+                        padding-top: 117px;
+                        padding-left: 86px;
+                        margin-bottom: 32px;
+                    }
+                    .greatcoffee_text{
+                        font-size: 16px;
+                        font-weight: 400;
+                        color: $light-cream;
+                        width: 450px;
+                        padding-left: 86px;
+                        margin-bottom: 56px;
+                        line-height: 26px;
+                        opacity: .8;
+                        font-family: $barlow;
+                    }
+                    .greatcoffee_link{
+                        margin-left: 86px;
+                        @extend %main-button-default;
+                        &:hover{
+                            background-color: #66D2CF;
+                            background-color: $button-hover;
+                            transition: .5s ease all;
+                        }
+                        &:disabled {
+                            background-color: $button-disabled;
+                        }
+                        &:active {
+                            background-color: $button-disabled;
+                            color: $dark-grey-blue;
+                        }
+                    }
+                    
+                }
+                
+                
+                .choose{
+                    .choose_content{
+                        width: 327px;
+                        height: 902px;
+                        padding: 0 24px;
+                        .choose_title{
+                            font-size: 28px;
+                        }
+                        .choose_text{
+                            width: 279px;
+                            margin: 0;
+                        }
+                    }
+                    
+                    .choose_box-wrapper{
+                        display: inline-block;
+                        width: 279px;
+                        margin: 0;
+                        position: absolute;
+                        top: 305px;
+                        .choose_box{
+                            width: 279px;
+                            height: 382px;
+                            margin: 0;
+                            // text-align: center;
+                            padding: 200px 12px 48px 12px;
+                            padding: 0;
+                            .choose_box_title{
+                                margin: 0;
+                                // text-align: center;
+                            }
+                            .choose_box_text{
+                                // width: 212px;
+                                // height: 78px;
+                                // text-align: center;
+                                margin: 0;
+                                margin-right: 0;
+                            }
+                        }
+                        .best-quality{
+                            position: relative;
+                            &::before{
+                                content: '';
+                                background-image: url('../img/best-quality.svg');
+                                width: 72px;
+                                height: 72px;
+                                position: absolute;
+                                left: 104px;
+                                top: 72px;
+                            }
+                        }
+                        .exclusive-benefits{
+                            position: relative;
+                            &::before{
+                                content: '';
+                                background-image: url('../img/benefits.svg');
+                                width: 72px;
+                                height: 72px;
+                                position: absolute;
+                                left: 104px;
+                                top: 72px;
+                            }
+                        }
+                        .free-shipping{
+                            position: relative;
+                            margin-bottom: 144px;
+                            &::before{
+                                content: '';
+                                background-image: url('../img/free-shipping.svg');
+                                width: 72px;
+                                height: 50px;
+                                position: absolute;
+                                left: 104px;
+                                top: 83px;
+                            }  
+                        }
+                    }
+                }
+                
+                
+                .works{
+                    .works-oval{
+                        display: none;
+                    }
+                    
+                    .works_box-wrapper{
+                        display: flex;
+                        flex-direction: column;
+                        text-align: center;
+                    }
+                }
+                
+            }
+        }
+        
+        .footer{
+            width: 100%;
+            .container{
+                width: 327px;
+                .footer-wrapper{
+                    .footer_link_img{
+                        width: 218px;
+                        height: 24px;
+                        padding-right: 0;
+                    }
+                    .footer_list{
+                        display: flex;
+                        flex-direction: column;
+                        .footer_item{
+                            .footer_link{
+                                margin: 0;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        
+    }
