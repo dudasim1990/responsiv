@@ -1,0 +1,151 @@
+
+/* 
+.Main-Button-Default{
+    width: 217px;
+    height: 56px;
+    border-radius: 6px;
+    background-color: #0E8784;
+}
+
+.Main-Button-Hover{
+    background-color: #66D2CF;
+}
+
+.Main-Button-Disabled{
+    background-color: #E2DEDB;
+} */
+
+
+$dark-syan: #0E8784;
+$dark-grey-blue: #333D4B;
+$pale-orange: #FDD6BA;
+$light-cream: #FEFCF7;
+$grey: #83888F;
+$button-hover: #66D2CF;
+$button-disabled: #E2DEDB;
+$barlow: 'Barlow';
+$text-size: 16px;
+
+
+
+%main-button-default{
+    width: 217px;
+    height: 56px;
+    border-radius: 6px;
+    background-color: $dark-syan;
+    display: inline-block;
+    font-weight: 900;
+    font-size: 18px;
+    text-align: center;
+    color: $light-cream;
+    padding: 15px;
+    box-sizing: border-box;
+}
+
+
+%oval{
+    width: 31px;
+    height: 31px;
+    border-radius: 50%;
+    border: 2px solid $dark-syan;
+    position: relative;
+    margin-right: 349px;
+    margin-bottom: 67px;
+}
+
+
+
+
+
+
+
+// %main-button-hover{
+    //     width: 217px;
+    //     height: 56px;
+    //     border-radius: 6px;
+    //     background-color: #66D2CF;
+    //     display: inline-block;
+    //     font-weight: 900;
+    //     font-size: 18px;
+    //     text-align: center;
+    //     color: $light-cream;
+    //     padding: 15px;
+    //     box-sizing: border-box;
+    // }
+
+    // ==============================================
+    
+    
+    // .works{
+    //     .works_title{
+    //         color: $grey;
+    //         margin-bottom: 80px;
+    //     }
+    //     .works-oval{
+    //         width: 31px;
+    //         height: 31px;
+    //         border-radius: 50%;
+    //         border: 2px solid $dark-syan;
+    //         position: relative;
+    //         margin-right: 349px;
+    //         margin-bottom: 67px;
+    //         &::after{
+    //             content: '';
+    //             display: block;
+    //             width: 349px;
+    //             height: 2px;
+    //             background-color: #c0c0c0;
+    //             position: absolute;
+    //             top: 50%;
+    //             left: 31px;
+    //         }
+    //     }
+    //     .oval3{
+    //         &::after{
+    //             visibility: hidden;
+    //             position: absolute;
+    //         }
+    //     }
+        
+    //     .works_box-wrapper{
+    //         display: flex;
+    //         .works_box{
+    //             width: 315px;
+    //             height: 355px;
+    //             color: $dark-grey-blue;
+    //             margin-bottom: 64px;
+    //             &:nth-child(-n + 2){
+    //                 margin-right: 95px;
+    //             }
+    //             .works_box_number{
+    //                 color: $pale-orange;
+    //                 margin-bottom: 38px;
+    //             }
+    //             .works_box_title{
+    //                 margin-bottom: 42px;
+    //                 width: 255px;
+    //             }
+    //             .works_box_text{
+    //                 font-size: 16px;
+    //             }
+    //         }
+    //     }
+    //     .works_link{
+    //         // margin-left: 86px;
+    //         @extend %main-button-default;
+    //         margin-bottom: 200px;
+    //         &:hover{
+    //             background-color: #66D2CF;
+    //             background-color: $button-hover;
+    //             transition: .5s ease all;
+    //         }
+    //         &:disabled {
+    //             background-color: $button-disabled;
+    //         }
+    //         &:active {
+    //             background-color: $button-disabled;
+    //             color: $dark-grey-blue;
+    //         }
+    //     }
+    // }
+    
