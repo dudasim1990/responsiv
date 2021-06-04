@@ -134,6 +134,8 @@
 }
 
 
+
+
 h1{
     font-family: 'Fraunces', serif;
     font-size: 72px;
@@ -268,7 +270,7 @@ body{
             position: absolute;
             top: 86px;
             background: -webkit-linear-gradient( rgba(254, 252, 247, 0), rgba(254, 252, 247, 1));
-            -webkit-background-clip: text;
+            // -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
             background-repeat: no-repeat;
         }
@@ -502,36 +504,38 @@ body{
 
 
 
-
-
-
 // ====================///////===============/////
+
+
 
 
 
 @media only screen and (max-width: 768px){
     
-    .body{
+    body{
         .main{
-            
             .container{
                 width: 688px;
                 margin: 0 auto;
                 
-                .greatcoffee{
-                    background-image: url('../cofe-tablet/Bitmap.jpg');
-                    width: 688px;
-                }
-                // }
-                
+             
                 .header{
-                    width: 768px;
+                    // width: 768px;
                 }
                 
                 .header_logo_img{
                     width: 236px;
                     height: 26px;
                 }
+
+
+                .greatcoffee{
+                    background-image: url('../cofe-tablet/Bitmap.jpg');
+                    width: 688px;
+                }
+                
+                
+                
                 
                 .ourcollection{
                     display: flex;
@@ -691,244 +695,261 @@ body{
                 }
             } 
             
-            .footer{     
-                width: 100%; 
-                .container{
-                    width: 688px;
-                    margin: 0 auto;
-                    .footer-wrapper{                  
-                        height: 270px;
-                        display: block;
-                        align-items: center;
-                        text-align: center;
-                        padding-top: 54px;
-                        
-                        display: flex;
-                        flex-direction: column;
-                        align-items: center;
-                        .footer_link_img{
-                            padding-right: 30px;
-                        }
-                        
-                        .footer_list{
-                            width: 283px;
-                            .footer_item {
-                                
-                                .link3{
-                                    margin-right: 0;
-                                }
-                            } 
-                            
-                        }
-                        .footer_network{
-                            // padding-left: 199px;
-                            .footer_network_link{
-                                .fa-facebook-square{
-                                    margin-left: 20px;
-                                }
-                            }
-                        }
-                    }
-                }
-                
-            }
+           
         }
-    }
-    
-    
-    // ======================//==============//
-    // ======================//==============//
-    // ======================//==============//
-    
-    
-    
-    
-}
 
-@media only screen and (max-width: 378px){
-    
-    
-    // body{
-        //     background-color: rgb(141, 221, 231);
-        // }
-        
-        .header{
+        .footer{     
+            width: 100%; 
             .container{
-                width: 327px;
+                width: 688px;
                 margin: 0 auto;
-                
-            }
-        }
-        
-        
-        
-        .main{
-            width: 100%;
-            .container{
-                width: 327px;
-                margin: 0 auto;               
-                .greatcoffee{
-                    background-image: url('../cofe-mobile/Bitmap.png');
-                    width: 327px;
-                    height: 500px;
-                    margin-bottom: 136px;
-                    background-repeat: no-repeat;
-                    border-radius: 10px;
-                    .greatcoffee_title{
-                        font-size: 40px;
-                        color: $light-cream;
-                        width: 590px;
-                        padding-top: 117px;
-                        padding-left: 86px;
-                        margin-bottom: 32px;
-                    }
-                    .greatcoffee_text{
-                        font-size: 16px;
-                        font-weight: 400;
-                        color: $light-cream;
-                        width: 450px;
-                        padding-left: 86px;
-                        margin-bottom: 56px;
-                        line-height: 26px;
-                        opacity: .8;
-                        font-family: $barlow;
-                    }
-                    .greatcoffee_link{
-                        margin-left: 86px;
-                        @extend %main-button-default;
-                        &:hover{
-                            background-color: #66D2CF;
-                            background-color: $button-hover;
-                            transition: .5s ease all;
-                        }
-                        &:disabled {
-                            background-color: $button-disabled;
-                        }
-                        &:active {
-                            background-color: $button-disabled;
-                            color: $dark-grey-blue;
-                        }
-                    }
+                .footer-wrapper{     
+                    width: 688px;             
+                    height: 270px;
+                    display: block;
+                    align-items: center;
+                    text-align: center;
+                    padding-top: 54px;
                     
-                }
-                
-                
-                .choose{
-                    .choose_content{
-                        width: 327px;
-                        height: 902px;
-                        padding: 0 24px;
-                        .choose_title{
-                            font-size: 28px;
-                        }
-                        .choose_text{
-                            width: 279px;
-                            margin: 0;
-                        }
-                    }
-                    
-                    .choose_box-wrapper{
-                        display: inline-block;
-                        width: 279px;
-                        margin: 0;
-                        position: absolute;
-                        top: 305px;
-                        .choose_box{
-                            width: 279px;
-                            height: 382px;
-                            margin: 0;
-                            // text-align: center;
-                            padding: 200px 12px 48px 12px;
-                            padding: 0;
-                            .choose_box_title{
-                                margin: 0;
-                                // text-align: center;
-                            }
-                            .choose_box_text{
-                                // width: 212px;
-                                // height: 78px;
-                                // text-align: center;
-                                margin: 0;
-                                margin-right: 0;
-                            }
-                        }
-                        .best-quality{
-                            position: relative;
-                            &::before{
-                                content: '';
-                                background-image: url('../img/best-quality.svg');
-                                width: 72px;
-                                height: 72px;
-                                position: absolute;
-                                left: 104px;
-                                top: 72px;
-                            }
-                        }
-                        .exclusive-benefits{
-                            position: relative;
-                            &::before{
-                                content: '';
-                                background-image: url('../img/benefits.svg');
-                                width: 72px;
-                                height: 72px;
-                                position: absolute;
-                                left: 104px;
-                                top: 72px;
-                            }
-                        }
-                        .free-shipping{
-                            position: relative;
-                            margin-bottom: 144px;
-                            &::before{
-                                content: '';
-                                background-image: url('../img/free-shipping.svg');
-                                width: 72px;
-                                height: 50px;
-                                position: absolute;
-                                left: 104px;
-                                top: 83px;
-                            }  
-                        }
-                    }
-                }
-                
-                
-                .works{
-                    .works-oval{
-                        display: none;
-                    }
-                    
-                    .works_box-wrapper{
-                        display: flex;
-                        flex-direction: column;
-                        text-align: center;
-                    }
-                }
-                
-            }
-        }
-        
-        .footer{
-            width: 100%;
-            .container{
-                width: 327px;
-                .footer-wrapper{
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: space-between;
                     .footer_link_img{
-                        width: 218px;
-                        height: 24px;
-                        padding-right: 0;
+                        padding-right: 30px;
                     }
+                    
                     .footer_list{
+                        width: 283px;
                         display: flex;
                         flex-direction: column;
-                        .footer_item{
+                        .footer_item {
                             .footer_link{
                                 margin: 0;
                             }
+                            .link3{
+                                margin-right: 0;
+                            }
+                        } 
+                        
+                    }
+                    .footer_network{
+                        // padding-left: 199px;
+                        .footer_network_link{
+                            .fa-facebook-square{
+                                margin-left: 20px;
+                            }
                         }
                     }
                 }
             }
+            
         }
-        
-    }
+    } 
+    
+}
+
+
+// ====================================///////===============================/////
+// ====================================///////===============================/////
+
+
+
+
+// @media only screen and (max-width: 378px){
+    
+    
+//     .header{
+//         .container{
+//             width: 327px;
+//             margin: 0 auto; 
+//         }
+//     }
+    
+    
+//     .main{
+//         .container{
+//             width: 327px;
+//             margin: 0 auto;   
+            
+            
+            
+            
+//             .ourcollection{
+//                 margin-bottom: 190px;
+//                 .our--collection{
+//                     height: 30px;
+//                     padding: 86px 20px 0px 19px;
+//                     text-align: center;
+//                     position: relative;
+//                     color: rgba(131, 136, 143, 1);
+//                     background-repeat: no-repeat;
+//                     font-size: 150px;
+//                     opacity: 0.3;
+//                     z-index: -1;
+//                     font-family: 'Fraunces', serif;
+//                     &::before{
+//                         content: 'our collection';
+//                         height: 196px;
+//                         position: absolute;
+//                         top: 86px;
+//                         background: -webkit-linear-gradient( rgba(254, 252, 247, 0), rgba(254, 252, 247, 1));
+//                         // -webkit-background-clip: text;
+//                         -webkit-text-fill-color: transparent;
+//                         background-repeat: no-repeat;
+//                     }
+//                 }
+                
+//                 .ourcollection_box-wrapper{
+//                     z-index: 2;
+//                     display: flex;
+//                     margin-left: 85px;
+//                     .ourcollection_box{
+//                         text-align: center;
+//                     }
+//                     .ourcollection_box_img{    
+//                         margin-bottom: 72px;
+//                     }
+//                     .ourcollection_box_title{
+//                         color: $dark-grey-blue;
+//                         margin-bottom: 9px;
+//                     }
+//                     .ourcollection_box_text{
+//                         padding: 15px;
+//                         width: 255px;
+//                         height: 78px;
+//                         color: $dark-grey-blue;
+//                         font-size: $text-size;
+//                     }
+//                 }
+//             }
+            
+
+            
+//             .choose{
+//                 .choose_content{
+//                     width: 327px;
+//                     height: 902px;
+//                     padding: 0 24px;
+//                     .choose_title{
+//                         font-size: 28px;
+//                     }
+//                     .choose_text{
+//                         width: 279px;
+//                         margin: 0;
+//                     }
+//                 }
+                
+//                 .choose_box-wrapper{
+//                     display: inline-block;
+//                     width: 279px;
+//                     margin: 0;
+//                     position: absolute;
+//                     top: 305px;
+//                     .choose_box{
+//                         width: 279px;
+//                         height: 382px;
+//                         margin: 0;
+//                         // text-align: center;
+//                         padding: 200px 12px 48px 12px;
+//                         padding: 0;
+//                         .choose_box_title{
+//                             margin: 0;
+//                             // text-align: center;
+//                         }
+//                         .choose_box_text{
+//                             // width: 212px;
+//                             // height: 78px;
+//                             // text-align: center;
+//                             // margin: 0;
+//                             // margin-right: 0;
+//                         }
+                        
+                        
+//                         .best-quality{
+//                             position: relative;
+//                             &::before{
+//                                 content: '';
+//                                 background-image: url('../img/best-quality.svg');
+//                                 width: 72px;
+//                                 height: 72px;
+//                                 position: absolute;
+//                                 left: 104px;
+//                                 top: 72px;
+//                             }
+//                         }
+//                         .exclusive-benefits{
+//                             position: relative;
+//                             &::before{
+//                                 content: '';
+//                                 background-image: url('../img/benefits.svg');
+//                                 width: 72px;
+//                                 height: 72px;
+//                                 position: absolute;
+//                                 left: 104px;
+//                                 top: 72px;
+//                             }
+//                         }
+//                         .free-shipping{
+//                             position: relative;
+//                             margin-bottom: 144px;
+//                             &::before{
+//                                 content: '';
+//                                 background-image: url('../img/free-shipping.svg');
+//                                 width: 72px;
+//                                 height: 50px;
+//                                 position: absolute;
+//                                 left: 104px;
+//                                 top: 83px;
+//                             }  
+//                         }
+                        
+//                     }
+                    
+//                 }
+//             }
+            
+            
+//             .works{
+//                 .works-oval{
+//                     display: none;
+//                 }
+                
+//                 .works_box-wrapper{
+//                     display: flex;
+//                     flex-direction: column;
+//                     text-align: center;
+//                 }
+//             }
+            
+//         }
+//     }
+    
+    
+    
+    
+    
+//     .footer{
+//         width: 100%;
+//         .container{
+//             width: 327px;
+//             .footer-wrapper{
+//                 .footer_link_img{
+//                     width: 218px;
+//                     height: 24px;
+//                     padding-right: 0;
+//                 }
+//                 .footer_list{
+//                     display: flex;
+//                     flex-direction: column;
+//                     .footer_item{
+//                         .footer_link{
+//                             margin: 0;
+//                         }
+//                     }
+//                 }
+//             }
+//         }
+//     }
+    
+// }
