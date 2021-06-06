@@ -555,36 +555,62 @@ body{
                     .greatcoffee{
                         background-image: url('../tiny-img/Bitmap-tabl.jpg');
                         width: 688px;
-                        margin-bottom: 170px;
+                        height: 500px;
+                        margin-bottom: 144px;
+                        .greatcoffee_title{
+                            font-size: 48px;
+                            line-height: 48px;
+                            color: $light-cream;
+                            width: 340px;
+                            padding-top: 104px;
+                            padding-left: 58px;
+                            margin-bottom: 24px;
+                        }
+                        .greatcoffee_text{
+                            font-size: 15px;
+                            line-height: 25px;
+                            font-weight: 400;
+                            color: $light-cream;
+                            width: 398px;
+                            padding-left: 58px;
+                            margin-bottom: 56px;
+                            line-height: 26px;
+                            opacity: .8;
+                            font-family: $barlow;
+                        }
+                        .greatcoffee_link{
+                            margin-left: 58px;
+                            // @extend %main-button-default;
+                        }
                     }
 
                     .background{
-                        width: 689px;
+                        width: 688px;
                         margin: 0 auto;
                         .our-collection{
                             font-size: 94px;
                             height: 119px;
-                            width: 686px;  
+                            width: 688px;  
+                            text-align: center;
                             line-height: 72px;
                             padding-top: 0;
-                            
                         }
                     }
                     
                     .ourcollection{
                         display: flex;
-                        margin-top: 203px;
-                    
-                        
+                        margin-top: 203px;                        
                         .ourcollection_box-wrapper{
                             display: flex;
                             flex-direction: column;
                         }
-                        
                         .ourcollection_box{
                             display: flex;
                             // flex-direction: column;
                             text-align: left;
+                            .kopi-box{
+                                padding-top: 30px;
+                            }
                         }
                     }
                     
@@ -774,7 +800,6 @@ body{
                 
             }
         } 
-        
     }
     
     
@@ -794,7 +819,10 @@ body{
                 .container{
                     width: 327px;
                     margin: 0 auto;
-                    background-color: aqua;
+                    // background-color: aqua;
+                    .header_nav{
+                        position: relative;
+                    }
                     
                     .header_list{
                         display: none;
@@ -810,7 +838,50 @@ body{
                 width: 16px;
                 height: 20px;
             }
+
+            .dropbtn {
+                width: 40px;
+                height: 40px;
+            }
             
+            .dropdown {
+                
+                width: 16px;
+                height: 20px;
+                display: inline-block;
+            }
+            
+            .header_list {
+                display: none;
+                position: absolute;
+                top: 83px;
+                left: 0;
+                right: 0;
+                background-color: $dark-grey-blue;
+                min-width: 160px;
+                width: 327px;
+                box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+                z-index: 1;
+                margin: 0;
+                font-size: 15px;
+                list-style-type: none;
+                .header_item{
+                    margin: 0;
+                    .header_link {
+                        padding: 10px 14px;
+                        text-decoration: none;
+                        display: block;
+                        color: $grey;
+                        &:hover{
+                            color: $light-cream;
+                        }
+                    }
+                }
+             
+            }
+            
+            
+            .dropdown:hover .header_list {display: flex; justify-content: space-between;}           
             
             
             
