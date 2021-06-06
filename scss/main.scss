@@ -727,7 +727,7 @@ body{
             }
             
             .footer{     
-                width: 100%; 
+                // width: 100%; 
                 .container{
                     width: 688px;
                     margin: 0 auto;
@@ -867,23 +867,26 @@ body{
 
                     .background{
                         width: 327px;
+                        height: 72px;
                         margin: 0 auto;
+                        margin-bottom: 13px;
+                        
                         .our-collection{
                             font-size: 38px;
                             height: 72px;
-                            width: 286px;  
+                            width: 327px;  
+                            text-align: center;
                             line-height: 72px;
                             padding-top: 0;
                             
                         }
                     }
                     
-                    
-                    
                     .ourcollection{
-                        width: 282px;
+                        width: 327px;
+                        padding: 0 20.5px;
                         margin: 0 auto;
-                        margin-bottom: 190px;
+                        margin-bottom: 120px;
                         display: inline-block;                   
                         .ourcollection_box-wrapper{
                             z-index: 2;
@@ -895,9 +898,10 @@ body{
                                 text-align: center;
                                 display: flex;
                                 flex-direction: column;
+                                margin-bottom: 48px;
                             }
                             .ourcollection_box_img{    
-                                margin-bottom: 72px;
+                                margin-bottom: 24px;
                             }
                             .ourcollection_box_title{
                                 color: $dark-grey-blue;
@@ -905,10 +909,12 @@ body{
                             }
                             .ourcollection_box_text{
                                 padding: 15px;
-                                width: 255px;
+                                width: 282px;
                                 height: 78px;
                                 color: $dark-grey-blue;
                                 font-size: $text-size;
+                                padding: 0;
+
                             }
                         }
                     }
@@ -1001,49 +1007,146 @@ body{
                             
                         }
                     }
-                    
-                    
+
                     .works{
+                        .works_title{
+                            width: 327px;
+                            text-align: center;
+                            margin-top: 434px;
+                            margin-bottom: 40px;
+                            
+                        }
                         .works-oval{
+                            margin-right: 202px;
+                            display: inline-block;
                             display: none;
+                        }
+                        .oval3{
+                            margin-right: 0;
                         }
                         
                         .works_box-wrapper{
+                            margin-bottom: 44px;
+                            margin: 0;
                             display: flex;
                             flex-direction: column;
                             text-align: center;
+                            .works_box{
+                                width: 327px;
+                                height: 252px;
+                                // box-sizing: content-box;
+                                // margin-bottom: 56px;
+                                &:nth-child(-n + 2){
+                                    margin-right: 0;
+                                }
+                                .works_box_number{
+                                    color: $pale-orange;
+                                    // margin-bottom: 96px;
+                                    font-size: 72px;
+                                    margin-bottom: 24px;
+
+                                }
+                                .works_box_title{
+                                    font-size: 27px;
+                                    width: 327px;
+                                    margin-bottom: 24px;
+                                }
+                                .works_box_text{
+                                    width: 327px;
+                                    height: 154px;
+                                    font-size: 15px;
+                                    line-height: 25px;
+                                }
+                            }
+                        }
+                        .works_link{
+               
+                            display: inline-block;
+                            width: 217px;
+                            height: 56px;
+                            margin: 0 auto;
+                            margin-left: 53.5px;
+                            margin-bottom: 120px;
+                            
                         }
                     }
-                    
                 }
             }
             
-            
-            
-            
-            
-            .footer{
-                width: 100%;
+
+            .footer{     
+                // width: 100%; 
                 .container{
                     width: 327px;
-                    .footer-wrapper{
+                    margin: 0 auto;
+                    .footer-wrapper{     
+                        width: 327px;             
+                        height: 346px;
+                        display: block;
+                        align-items: center;
+                        text-align: center;
+                        padding-top: 54px;
+                        
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                        justify-content: space-between;
                         .footer_link_img{
-                            width: 218px;
-                            height: 24px;
-                            padding-right: 0;
+                            padding-right: 30px;
                         }
+                        
                         .footer_list{
+                            width: 283px;
                             display: flex;
                             flex-direction: column;
-                            .footer_item{
+                            .footer_item {
                                 .footer_link{
                                     margin: 0;
+                                }
+                                .link3{
+                                    margin-right: 0;
+                                }
+                            } 
+                            
+                        }
+                        .footer_network{
+                            // padding-left: 199px;
+                            .footer_network_link{
+                                .fa-facebook-square{
+                                    margin-left: 20px;
                                 }
                             }
                         }
                     }
                 }
+                
             }
+            
+            
+            
+            
+            // .footer{
+            //     // width: 100%;
+            //     .container{
+            //         width: 327px;
+            //         .footer-wrapper{
+            //             .footer_link_img{
+            //                 width: 218px;
+            //                 height: 24px;
+            //                 padding-right: 0;
+            //             }
+            //             .footer_list{
+            //                 display: flex;
+            //                 flex-direction: column;
+            //                 .footer_item{
+            //                     .footer_link{
+            //                         margin: 0;
+            //                     }
+            //                 }
+            //             }
+            //         }
+            //     }
+            // }
         }
         
     }
