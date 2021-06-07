@@ -390,7 +390,7 @@ body{
         margin-bottom: 80px;
     }
     .works-oval{
-        @extend %oval;       
+        @extend %oval;      
         &::after{
             content: '';
             display: block;
