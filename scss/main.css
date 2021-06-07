@@ -797,6 +797,9 @@ body {
   body .main .container .works .works_link {
     margin-bottom: 144px;
   }
+  body .footer {
+    margin-bottom: 72px;
+  }
   body .footer .container {
     width: 688px;
     margin: 0 auto;
