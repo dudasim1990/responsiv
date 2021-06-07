@@ -552,6 +552,7 @@ body {
   font-size: 12px;
   font-weight: 700;
   margin-right: 33px;
+  text-transform: uppercase;
 }
 
 .footer .footer-wrapper .footer_list .footer_item .footer_link:hover {
