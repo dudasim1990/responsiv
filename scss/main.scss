@@ -214,7 +214,7 @@ body{
 }
 
 .greatcoffee{
-    background-image: url('../coffe-img/Bitmap.jpg');
+    background-image: url('../tiny-img/Bitmap-desk.png');
     width: 1280px;
     height: 600px;
     margin-bottom: 136px;
@@ -499,15 +499,12 @@ body{
                 }
             }
         }
-        
     }
 
     // ===================================///////==============================/////
     // ===================================///////==============================/////   
     
     @media only screen and (max-width: 768px){
-
-        // @import './block/general';
         
         body{
             
@@ -778,6 +775,7 @@ body{
             }
         } 
     }
+
     // ====================================///////===============================/////
     // ====================================///////===============================/////
     
@@ -803,9 +801,7 @@ body{
                     }
                 }
             }
-            
-            
-            
+
             .bar-icon{
                 display: block;
                 fill: black;
@@ -853,12 +849,9 @@ body{
                 }
              
             }
-            
-            
+
             .dropdown:hover .header_list {display: flex; justify-content: space-between;}           
-            
-            
-            
+
             .main{
                 .container{
                     width: 327px;
@@ -1118,7 +1111,6 @@ body{
                 }
             }
             
-
             .footer{     
                 // width: 100%; 
                 .container{
@@ -1167,30 +1159,5 @@ body{
                 
             }
             
-            
-            
-            
-            // .footer{
-            //     // width: 100%;
-            //     .container{
-            //         width: 327px;
-            //         .footer-wrapper{
-            //             .footer_link_img{
-            //                 width: 218px;
-            //                 height: 24px;
-            //                 padding-right: 0;
-            //             }
-            //             .footer_list{
-            //                 display: flex;
-            //                 flex-direction: column;
-            //                 .footer_item{
-            //                     .footer_link{
-            //                         margin: 0;
-            //                     }
-            //                 }
-            //             }
-            //         }
-            //     }
-            // }
         } 
     }
