@@ -247,6 +247,7 @@ body {
   font-weight: 700;
   font-family: "Barlow";
   color: #83888F;
+  text-transform: uppercase;
 }
 
 .header_nav .header_item .header_link:hover {
