@@ -523,6 +523,10 @@ body {
   color: #333D4B;
 }
 
+.footer {
+  margin-bottom: 88px;
+}
+
 .footer .footer-wrapper {
   background-color: #333D4B;
   height: 120px;
